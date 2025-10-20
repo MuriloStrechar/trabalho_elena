@@ -1,44 +1,152 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+  background-image: url('imgs/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.p1{
+	color: #000000;
+}
 
 .navbar {
-	background-color: #333;
-	padding: 10px 0;
+  background-color: #150B12;
+  padding: 10px 0;
 }
+
 .navbar-content {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 900px;
-	margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
 }
-.navbar-logo {
-	flex: 1;
-	display: flex;
-	align-items: center;
-}
+
 .logo {
-	width: 80px;
-	height: auto;
-	border-radius: 50%;
+  width: 80px;
+  border-radius: 50%;
 }
+
 .navbar-links {
-	flex: 2;
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 .navbar-links li {
-	margin: 0 20px;
+  margin: 0 20px;
 }
+
 .navbar-links a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 16px;
-	transition: color 0.2s;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s;
 }
+
 .navbar-links a:hover {
-	color: #ffd700;
+  color: #ffd700;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;         
+  justify-content: center;
+  gap: 40px;               
+  margin-top: 40px;
+}
+
+.polaroid {
+	
+  width: 20%;
+  background-color: rgba(197, 123, 123, 0.904);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border: #f59f2871 5px solid;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.carrinho {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* Acompanhamento do Pedido */
+.acompanhamento-pedido {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.acompanhamento-pedido h3 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.status-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.etapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.etapa.ativo {
+  opacity: 1;
+}
+
+.icone {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.etapa p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.linha {
+  width: 60px;
+  height: 2px;
+  background-color: #666;
+  margin: 0 10px;
+}
+
+.etapa.ativo .icone {
+  transform: scale(1.1);
+}
+
+.etapa.ativo p {
+  color: #ffd700;
 }
